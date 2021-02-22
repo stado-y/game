@@ -49,21 +49,38 @@ function dijkstra(argument0){
 							var _next_iter_node = ds_list_find_value(_all_nodes_list, j);
 							
 							if (_next_iter_node.node_value < _best_nearest_value) { // если вес графа меньше
-									
-									
+
 								_best_nearest_value = _next_iter_node.node_value
 							
 								_nearest_node = _next_iter_node;
 					
 								break;
 									
+							} else {
+							
+								if (j == (ds_list_size(_all_nodes_list) - 1)) and (_next_iter_node.node_value == 999) { // если нет больше связей (остались изолированные ноды)
+								
+									ds_list_clear(_all_nodes_list);
+									
+									continue
+								
+								}
+							
 							}
 								
 						}
 							
 					
 
+					} else {
+					
+						continue
+					
 					}
+				
+				} else {
+				
+					continue
 				
 				}
 			  

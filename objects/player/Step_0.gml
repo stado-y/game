@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// коллизия и перемещение
 key_left = keyboard_check(ord("A")); // управление
 key_right = keyboard_check(ord("D"));
 key_jump = keyboard_check_pressed(vk_space);

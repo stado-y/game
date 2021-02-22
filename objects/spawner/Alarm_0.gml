@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// pter spawn
 randomize()
 
 var clear_x_range = [32, room_width - 32];
