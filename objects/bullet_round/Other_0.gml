@@ -1,0 +1,2 @@
+// Уничтожается
+instance_destroy();
