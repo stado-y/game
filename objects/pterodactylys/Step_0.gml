@@ -19,7 +19,7 @@ if (alarm_get(11) == -1) {
 	
 
 
-	alarm_set(11, 30);
+	alarm_set(11, 15);
 
 }
 

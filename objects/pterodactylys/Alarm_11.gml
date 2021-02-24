@@ -17,6 +17,8 @@ var _node = instance_nearest(x, y, node);
 
 _mypath = dijkstra(_node);
 
+path_insert_point(_mypath, 0, x, y, 100);
+
 path_set_closed(_mypath, false);
 
 

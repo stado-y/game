@@ -1,6 +1,8 @@
 randomize();
 
 
+layer_set_visible("nodes", false);
+
 // Создаем границы
 var pixels = 16;
 while (pixels < room_width) {
