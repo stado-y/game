@@ -24,6 +24,26 @@ if (alarm_get(11) == -1) {
 }
 
 
+//if (alarm_get(10) == -1) {
+
+//	alarm_set(10, 1)
+
+
+//}
+
+
+
+//if variable_instance_exists(id, "_mypath") {
+
+//	path_x = path_get_x(_mypath, 1)
+//	path_y = path_get_y(_mypath, 1)
+//	number = path_get_number(_mypath)
+//	path_xx = path_get_point_x(_mypath, number)
+//	path_yy = path_get_point_y(_mypath, number)
+
+//}
+
+
 //if (variable_instance_exists(id, "_mypath")) {
 
 //	path_delete(_mypath)

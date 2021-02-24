@@ -113,6 +113,9 @@ for (i = 48; i <= r_width; i += 32) {
 // Список всех нодов для просчета путей
 global.all_nodes = ds_list_create();
 
+
+global.used_nodes = ds_list_create();
+
 with (node) {
 		
 	if distance_to_object(blocks) < 4 {

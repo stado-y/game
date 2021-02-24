@@ -23,12 +23,39 @@ function node_radius(argument0, argument1){
 			if (i < 4) and (_inst.node_value > _value + 1) { // если вес графа больше
 			
 				_inst.node_value = _value + 1; // обычный вес
+				
+				if (ds_list_find_index(global.used_nodes, _inst.id) != -1) {
+				
+					ds_list_delete(global.used_nodes, _inst.id);
+
+					if (ds_list_find_index(global._all_nodes_copy, _inst.id) == -1) {
+					
+						ds_list_add(global._all_nodes_copy, _inst.id);
+					
+					}
+				
+				}
+				
 			
 			}
 				
 			if  (i > 3) and (_inst.node_value > _value + 1.42) { // по диагонали дороже
 			
 				_inst.node_value = _value + 1.42; // вес по диагонали
+				
+				if (ds_list_find_index(global.used_nodes, _inst.id) != -1) { // если был помечен как пройденный, удаляем
+				
+					ds_list_delete(global.used_nodes, _inst.id);
+					
+					if (ds_list_find_index(global._all_nodes_copy, _inst.id) == -1) { // и добавляем обратно в список всех нодов
+					
+						ds_list_add(global._all_nodes_copy, _inst.id);
+					
+					}
+					
+				
+				}
+				
 			}
 		
 		}
